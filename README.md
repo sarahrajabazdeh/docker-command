@@ -29,3 +29,10 @@ docker logs container-id
 # detect image layer 
 docker history imgage_name
 ### every change you've made via run , create a new layer 
+# build a docker image 
+docker build -t image_name .
+
+# tips
+ -chian RUN instructions in dockerfile to limit layer.
+ -if u want to change dockerfile ,dont forget to build it to apply those changes.
+
