@@ -31,6 +31,8 @@ docker history imgage_name
 ### every change you've made via run , create a new layer 
 # build a docker image 
 docker build -t image_name .
+after it built, run it using output previous command 
+docker run -it (privious output)
 
 # tips
  -chian RUN instructions in dockerfile to limit layer.
