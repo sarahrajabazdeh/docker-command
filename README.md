@@ -19,3 +19,13 @@ docker run --name sara image_name
 docker run -d image_name 
 and then :
 docker run inspect (output of previous command) 
+it contains info like: network settings and log path .enjoy it :)
+# port number
+-it gives u to work(change, update) with that image 
+-p hostport : container port 
+docker run -it -p 8000:80 image_name
+# docker logs command
+docker logs container-id
+# detect image layer 
+docker history imgage_name
+### every change you've made via run , create a new layer 
