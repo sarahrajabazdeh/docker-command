@@ -37,4 +37,4 @@ docker run -it (privious output)
 # tips
  -chian RUN instructions in dockerfile to limit layer.
  -if u want to change dockerfile ,dont forget to build it to apply those changes.
-
+ -ADD command can copy or if its not exist , download it then copy it or have ability to unpack compressed file.generally COPY is prefered . just need ADD when you know you need it. COPY is more transparent and use when you want to copy your local repo into container.
