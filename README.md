@@ -38,3 +38,16 @@ docker run -it (privious output)
  -chian RUN instructions in dockerfile to limit layer.
  -if u want to change dockerfile ,dont forget to build it to apply those changes.
  -ADD command can copy or if its not exist , download it then copy it or have ability to unpack compressed file.generally COPY is prefered . just need ADD when you know you need it. COPY is more transparent and use when you want to copy your local repo into container.
+ 
+# build a dockerimage using port
+docker run -d -p 5000:5000 imageid
+
+# working with container interactively
+docker exec -it container_id (a command which you want to run in container)
+
+# all the running processes in this container
+ps axu
+# how to link between two container
+docker run -d -p 5000:5000 --link
+# container IP 
+docker inspect container_id | grep IP
