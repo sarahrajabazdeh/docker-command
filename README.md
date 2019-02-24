@@ -53,3 +53,12 @@ ps axu
 docker run -d -p 5000:5000 --link
 # container IP 
 docker inspect container_id | grep IP
+
+# list all docker networks 
+docker network ls
+i should mension that when docker initialized, docker deamon create docker network bridge by default. to get more information type:
+docker network inspect bridge 
+# to see ifconfig a container
+docker exec -it container_name ifconfig
+
+
