@@ -60,5 +60,7 @@ i should mension that when docker initialized, docker deamon create docker netwo
 docker network inspect bridge 
 # to see ifconfig a container
 docker exec -it container_name ifconfig
+# see who take the port 
+sudo netstat -nl -p tcp  | grep 80(port number)
 
 
